@@ -1,0 +1,176 @@
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+/* The side navigation menu */
+
+.sidebar-icon a{
+    font-size: 30px;
+    color: #222222;
+    transition: 0.3s;
+
+}
+
+.sidebar-icon a:hover {
+    color: gray;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.logo {
+    margin-top: 150px;
+    width: 60%;
+    display: inline-block;
+    z-index: 20;
+    float: left;
+    position: absolute;
+
+}
+
+/* Shine */
+.logo figure {
+    position: relative;
+}
+.logo figure::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 0;
+    display: block;
+    content: '';
+    width: 20%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.logo figure:hover::before {
+    -webkit-animation: shine 1s;
+    animation: shine 1s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 80%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 80%;
+    }
+}
+
+
+.icons_row {
+    display: inline-block;
+    padding-top: 5px;
+}
+.icons_row a {
+    padding: 5px;
+    margin: 10px 10px 0px 0px;
+    color: #222222;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.icons_row a:hover {
+    color: gray;
+}
+
+.downarrow {
+    margin-top: 400px;
+    width: 30px;
+    height: auto;
+}
+
+.background {
+    float: right;
+    z-index: 10;
+    width: 35%;
+    height: 800px;
+    margin-top: 0;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.imagecol {
+    width: 75%;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.infocol {
+    width: 25%;
+    display: inline-block;
+    margin-top: 100px;
+    float: right;
+}
+
+.languagetag {
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 10px;
+
+}
+
+
+/* Horizontal Scrolling Cards */
