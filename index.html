@@ -8,29 +8,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Heebo:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
-
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="description" content="A little library that can be used for creating WebGL powered distortion hover effects using displacement images." />
+    <meta name="keywords" content="software, developer" />
+    <meta name="Mitch Fox" content="Mitchfox.io / Software Developer Portfolio" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
 <body>
 
-<!-- TODO will be footage of coding / me taking photos -->
 <div>
-        <img class="background" src="images/background.jpg">
+    <div class="grid__item grid__item--bg">
+        <div class="grid__item-img" style="object-fit: cover" data-displacement="img/displacement/6.jpg" data-intensity="0.6" data-speedIn="1.2" data-speedOut="0.5">
+            <img class="background-images" src="images/code2.jpg" alt="Image"/>
+            <img class="background-images" src="images/me3.jpg" alt="Image Alt"/>
+        </div>
+    </div>
 </div>
 
 
 <!-- Top Content -->
 <section class="section topcontent">
+
     <!-- Navigation-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#projects">Projects</a>
         <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <!-- Social Media Icons -->
+        <a href="https://github.com/mitchfox?tab=repositories" target="_blank"><i class="fab fa-github"></i> Github</a>
+        <a href="https://www.instagram.com/mitchellf0x/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <!--<a href="#"></a>-->
+        <!--<a href="#"></a>-->
+        <!--<a href="#"></a>-->
     </div>
-
-
 
     <!--Logo -->
     <div class="container">
@@ -39,7 +52,7 @@
 
         <div class="logo">
             <figure>
-            <img src="images/newlogo.png">
+            <img src="images/newlogo1.png">
             </figure>
             <div class="icons_row">
                 <a href="https://github.com/mitchfox?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
@@ -56,25 +69,107 @@
 <!-- Bouncing Arrow -->
 <section class="section">
     <div class="container">
-        <a>
+        <a href="#projects">
         <img class="downarrow bounce" src="images/downarrow.png">
         </a>
     </div>
 </section>
 
-<!-- Projects -->
-<!--<section class="section" style="margin-top: 50px">-->
-    <!--<div class="container">-->
-    <!--<div class="imagecol">-->
-        <!--<img src="images/dlanor-s-703975-unsplash.jpg">-->
-    <!--</div>-->
-    <!--<div class="infocol">-->
-        <!--<p class="languagetag">Python</p>-->
-        <!--<p class="title">Image Processing Algorithm</p>-->
-        <!--<p class="description">Simple face detection & image processing application designed to sort large amounts of photography. OpenCV & Python were the main tools used throughout the project.</p>-->
-    <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
+
+
+<!-- Projects / Grey Background-->
+<section class="section" id="projects" style="margin-top: 75px; color: #f1f1f1">
+    <div class="container">
+    <p class="title" style="text-transform:uppercase;">Projects</p>
+    </div>
+
+    <a target="_blank" href="https://github.com/mitchfox/ImageClassification-Processing">
+        <div class="container">
+        <!-- Image Processing Algorithm -->
+            <div class="new-card">
+                <div class="imagecolumn">
+                    <img src="images/projects/imageclassifier.jpg" style="height: auto">
+                </div>
+                <div class="contentcolumn">
+                    <span class="tag is-warning languagetag">Python</span>
+                    <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">Image Processing Algorithm</p>
+                    <p>Simple face detection & image processing application designed to sort large
+                        amounts of photography. OpenCV & Python were the main tools used throughout the project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a target="_blank" href="https://github.com/mitchfox/ImageClassification-Processing">
+        <div class="container">
+            <!-- Image Processing Algorithm -->
+            <div class="new-card">
+                <div class="imagecolumn">
+                    <img src="images/projects/mitchellfox.io.jpg" style="height: auto">
+                </div>
+                <div class="contentcolumn">
+                    <span class="tag is-danger languagetag">HTML</span><span class="tag is-danger languagetag">CSS</span>
+                    <span class="tag is-danger languagetag">Javascript</span>
+                    <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">mitchellfox.io</p>
+                    <p>Personal software developer website using various frontend technologies and frameworks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a target="_blank" href="https://github.com/mitchfox/ImageClassification-Processing">
+        <div class="container">
+            <!-- Image Processing Algorithm -->
+            <div class="new-card">
+                <div class="imagecolumn">
+                    <img src="images/projects/imageclassifier.jpg" style="height: auto">
+                </div>
+                <div class="contentcolumn">
+                    <span class="tag is-warning languagetag">Python</span>
+                    <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">Image Processing Algorithm</p>
+                    <p>Simple face detection & image processing application designed to sort large
+                        amounts of photography. OpenCV & Python were the main tools used throughout the project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a target="_blank" href="https://github.com/mitchfox/ImageClassification-Processing">
+        <div class="container">
+            <!-- Image Processing Algorithm -->
+            <div class="new-card">
+                <div class="imagecolumn">
+                    <img src="images/projects/imageclassifier.jpg" style="height: auto">
+                </div>
+                <div class="contentcolumn">
+                    <span class="tag is-warning languagetag">Python</span>
+                    <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">Image Processing Algorithm</p>
+                    <p>Simple face detection & image processing application designed to sort large
+                        amounts of photography. OpenCV & Python were the main tools used throughout the project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <div class="container" style="margin-top: 30px; text-transform: uppercase; font-weight: 700;">
+        <!-- View All Button  -->
+        <a target="_blank" href="https://github.com/mitchfox?tab=repositories" class="button is-fullwidth is-light">View All</a>
+    </div>
+
+
+</section>
+
+
+
+<footer style="height: 300px; background: #111111">
+
+
+
+</footer>
 
 
 
@@ -82,14 +177,32 @@
 
 
 
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="js/hover.js"></script>
+<script>
+    imagesLoaded( document.querySelectorAll('img'), () => {
+        document.body.classList.remove('loading');
+    });
 
+    Array.from(document.querySelectorAll('.grid__item-img')).forEach((el) => {
+        const imgs = Array.from(el.querySelectorAll('img'));
+        new hoverEffect({
+            parent: el,
+            intensity: el.dataset.intensity || undefined,
+            speedIn: el.dataset.speedin || undefined,
+            speedOut: el.dataset.speedout || undefined,
+            easing: el.dataset.easing || undefined,
+            hover: el.dataset.hover || undefined,
+            image1: imgs[0].getAttribute('src'),
+            image2: imgs[1].getAttribute('src'),
+            displacementImage: el.dataset.displacement
+        });
+    });
+</script>
 
-
-
-
-
-
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,31 @@
+@import url("https://use.typekit.net/std3xut.css");
+
+.grid__item-img {
+    position: center;
+	display: block;
+	height: 100%;
+    object-fit: cover;
+    object-position: center;
+	width: 100%;
+}
+.background-images {
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid__item-img img:nth-child(2) {
+	/*position: absolute;*/
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.grid__item:hover .grid__item-img img:nth-child(2) {
+	opacity: 1;
+}
+
+.js .grid__item-img img {
+	display: none;
+}
+

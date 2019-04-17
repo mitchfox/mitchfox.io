@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+body p {
+    color: #111111;
+}
+
+/* The side navigation menu */
+
+.sidebar-icon a{
+    font-size: 30px;
+    color: #222222;
+    transition: 0.3s;
+
+}
+
+.sidebar-icon a:hover {
+    color: gray;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    opacity: 0.97;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: gray;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+.logo {
+    margin-top: 150px;
+    width: 60%;
+    display: inline-block;
+    z-index: 20;
+    float: left;
+    position: absolute;
+
+}
+
+.icons_row {
+    display: inline-block;
+    padding-top: 5px;
+    z-index: 1;
+}
+.icons_row a {
+    padding: 5px;
+    margin: 10px 10px 0px 0px;
+    color: #222222;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.icons_row a:hover {
+    color: gray;
+}
+
+.downarrow {
+    margin-top: 400px;
+    width: 30px;
+    height: auto;
+}
+
+/* Background with Image Effects */
+
+.grid__item {
+    position: relative;
+    display: flex;
+    /*align-items: stretch;*/
+    float: right;
+    z-index: 10;
+    width: 35%;
+    height: 720px;
+    margin-top: 0;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.new-card {
+    margin-top: 70px;
+    position: relative;
+    transition: top ease 0.25s;
+}
+
+.new-card:hover .imagecolumn {
+    opacity: 0.9;
+}
+.new-card:hover .project-title {
+    text-decoration: underline;
+}
+
+/* Image */
+.imagecolumn {
+    display: inline-block;
+    width: 35%;
+}
+
+/* Content*/
+.contentcolumn {
+    width: 65%;
+    float: right;
+    display: inline-block;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+
+.languagetag {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+
+
+/* Anchor Links */
+a[ id= "projects" ]:target ~ section.section {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+}
+
+
+
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
