@@ -107,8 +107,8 @@ body p {
     float: right;
     z-index: 10;
     width: 35%;
-    height: 720px;
     margin-top: 0;
+    height: 100vh;
 }
 
 .bounce {
@@ -141,11 +141,25 @@ body p {
 .new-card:hover .project-title {
     text-decoration: underline;
 }
+.new-card:hover .rainbow-overlay {
+    opacity: 0.4;
+}
 
 /* Image */
 .imagecolumn {
     display: inline-block;
     width: 35%;
+}
+
+/* Rainbow Overlay */
+.rainbow-overlay {
+    position: absolute;
+    width: 35%;
+    display: inline-block;
+    top: 0px;
+    opacity: 0;
+
+
 }
 
 /* Content*/
