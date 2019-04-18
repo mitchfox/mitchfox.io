@@ -50,26 +50,24 @@
 
     </div>
 
-    <!--Logo -->
+    <!--Logo / Social Icons -->
     <div class="container">
-        <!-- Sidebar Icon -->
+        <!-- Sidebar Icons -->
         <div class="sidebar-icon"><a><span onclick="openNav()"><i class="fas fa-bars"></i></span></a></div>
 
         <div class="logo">
             <figure>
             <img src="images/newlogo1.png">
             </figure>
+            <!-- Social Icons -->
             <div class="icons_row">
                 <a href="https://github.com/mitchfox?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://www.instagram.com/mitchellf0x/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
-
     </div>
-    <!-- Social Connect Icons -->
 </section>
-
 
 <!-- Bouncing Arrow -->
 <section class="section">
@@ -80,17 +78,18 @@
     </div>
 </section>
 
+<!-- Back to Top Button -->
+<button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
 
 <!-- Projects / Grey Background-->
-<section class="section" id="projects" style="margin-top: 75px; color: #f1f1f1">
+<section class="section" id="projects" style="margin: 75px 0px 0px 0px; color: #f1f1f1">
     <div class="container">
     <p class="title" style="text-transform:uppercase;">Projects</p>
     </div>
 
     <div class="columns">
         <div class="column">
-
 
 
             <a target="_blank" href="https://github.com/mitchfox/ImageClassification-Processing">
@@ -114,7 +113,26 @@
 
             <a target="_blank" href="https://github.com/mitchfox/ImageClassification-Processing">
                 <div class="container">
-                    <!-- Image Processing Algorithm -->
+                    <!-- Teensy Device Platformer Game -->
+                    <div class="new-card">
+                        <div class="imagecolumn">
+                            <img src="images/projects/teensy.jpg" style="height: auto">
+                            <img class="rainbow-overlay" src="images/rainbowoverlay.jpg">
+                        </div>
+                        <div class="contentcolumn">
+                            <span class="tag is-info languagetag">C</span>
+                            <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">Teensy Device Platformer Game</p>
+                            <p class="description-title">The second of a two part university project aimed to teach the fundamentals of micro-controllers
+                                and game mechanics. Coded fully in c, the project delved into more complex topics providing a platform for everything programming.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a target="_blank" href="https://github.com/mitchfox/ImageClassification-Processing">
+                <div class="container">
+                    <!-- mitchellfox.io -->
                     <div class="new-card">
                         <div class="imagecolumn">
                             <img src="images/projects/mitchellfox.io.jpg" style="height: auto">
@@ -124,7 +142,8 @@
                             <span class="tag is-danger languagetag">HTML</span><span class="tag is-danger languagetag">CSS</span>
                             <span class="tag is-danger languagetag">Javascript</span>
                             <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">mitchellfox.io</p>
-                            <p class="description-title">Personal software developer website using various frontend technologies and frameworks.
+                            <p class="description-title">Personal software developer website using various frontend technologies and frameworks created
+                                as a resume as well as frontend and backend web technology project.
                             </p>
                         </div>
                     </div>
@@ -136,31 +155,12 @@
                     <!-- Image Processing Algorithm -->
                     <div class="new-card">
                         <div class="imagecolumn">
-                            <img src="images/projects/imageclassifier.jpg" style="height: auto">
+                            <img src="images/projects/spacerace.jpg" style="height: auto">
                             <img class="rainbow-overlay" src="images/rainbowoverlay.jpg">
                         </div>
                         <div class="contentcolumn">
-                            <span class="tag is-warning languagetag">Python</span>
-                            <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">Image Processing Algorithm</p>
-                            <p class="description-title">Simple face detection & image processing application designed to sort large
-                                amounts of photography. OpenCV & Python were the main tools used throughout the project.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a target="_blank" href="https://github.com/mitchfox/ImageClassification-Processing">
-                <div class="container">
-                    <!-- Image Processing Algorithm -->
-                    <div class="new-card">
-                        <div class="imagecolumn">
-                            <img src="images/projects/imageclassifier.jpg" style="height: auto">
-                            <img class="rainbow-overlay" src="images/rainbowoverlay.jpg">
-                        </div>
-                        <div class="contentcolumn">
-                            <span class="tag is-warning languagetag">Python</span>
-                            <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">Image Processing Algorithm</p>
+                            <span class="tag is-link languagetag">C#</span>
+                            <p style="font-size: 30px; font-weight: bold; margin-bottom: 10px" class="project-title">Space Race Game (Visual Studio)</p>
                             <p class="description-title">Simple face detection & image processing application designed to sort large
                                 amounts of photography. OpenCV & Python were the main tools used throughout the project.
                             </p>
@@ -172,6 +172,10 @@
         </div>
     </div>
 
+    <div class="container" style="margin-top: 30px; text-transform: uppercase; font-weight: 700;">
+    <!-- View All Button  -->
+    <a target="_blank" href="https://github.com/mitchfox?tab=repositories" class="button is-fullwidth is-light">View All</a>
+    </div>
 
 </section>
 
@@ -180,16 +184,16 @@
 
 
 
-    <!--<div class="container" style="margin-top: 30px; text-transform: uppercase; font-weight: 700;">-->
-        <!--&lt;!&ndash; View All Button  &ndash;&gt;-->
-        <!--<a target="_blank" href="https://github.com/mitchfox?tab=repositories" class="button is-fullwidth is-light">View All</a>-->
-    <!--</div>-->
-    
 
 
-<footer style="height: 200px; background: #111111">
 
 
+<footer class="footer has-background-black ">
+
+    <div class="has-text-centered has-text-white">
+        <p style="color: white;"> <strong style="color: white;">mitchellfox.io</strong> |  Made with <span class="icon" style="color: red;"> <i class="fas fa-heart"></i> </span> by
+            <a href="#" class="hover-link">Mitchell Fox</a> </p>
+    </div>
 
 </footer>
 
@@ -222,6 +226,26 @@
             displacementImage: el.dataset.displacement
         });
     });
+</script>
+
+<!-- -->
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("back-to-top").style.display = "block";
+        } else {
+            document.getElementById("back-to-top").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 </script>
 
 <script src="js/main.js"></script>
