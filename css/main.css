@@ -63,6 +63,18 @@ body p {
     margin-left: 50px;
 }
 
+.divider {
+    border: 0;
+    height: 3px;
+    background: gray; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #DF66AC, #F4A385 , #39CE9E); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #DF66AC, #F4A385 , #39CE9E); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #DF66AC, #F4A385 , #39CE9E); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #DF66AC, #F4A385 , #39CE9E); /* Standard syntax (must be last) */
+    width: 50%;
+    margin-left: 32px;
+}
+
 
 
 .logo {
@@ -137,6 +149,7 @@ body p {
 
 .new-card:hover .imagecolumn {
     opacity: 0.9;
+
 }
 .new-card:hover .project-title {
     text-decoration: underline;
@@ -158,7 +171,7 @@ body p {
     display: inline-block;
     top: 0px;
     opacity: 0;
-
+    transition: ease 0.25s;
 
 }
 
@@ -178,7 +191,12 @@ body p {
     padding: 5px;
     font-weight: 900;
     text-transform: uppercase;
+}
 
+.project-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px
 }
 
 
@@ -192,6 +210,80 @@ a[ id= "projects" ]:target ~ section.section {
 
 
 
+
+@media only screen and (max-width: 1100px) {
+    .grid__item {
+        display: none;
+    }
+    .logo {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .new-card {
+        margin-bottom: 200px;
+    }
+    .contentcolumn {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .rainbow-overlay {
+        display: none;
+    }
+
+    .project-title {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    .description-title {
+        display: none;
+    }
+    .imagecolumn {
+        display: block;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid__item {
+        display: none;
+    }
+    .logo {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contentcolumn {
+        display: block;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .rainbow-overlay {
+        display: none;
+    }
+    .languagetag {
+        margin-top: 10px;
+    }
+
+    .project-title {
+        margin-bottom: 100px;
+        font-size: 30px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .description-title {
+        display: none;
+    }
+    .imagecolumn {
+        display: block;
+        width: 90%;
+    }
+}
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
