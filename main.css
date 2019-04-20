@@ -71,8 +71,9 @@ body p {
     background: -o-linear-gradient(right, #ff72c5, #ffa673 , #34f0bd); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #ff72c5, #ffa673 , #34f0bd); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to right, #ff72c5, #ffa673 , #34f0bd); /* Standard syntax (must be last) */
-    width: 50%;
-    margin-left: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 
