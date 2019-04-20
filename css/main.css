@@ -67,12 +67,13 @@ body p {
     border: 0;
     height: 3px;
     background: gray; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #DF66AC, #F4A385 , #39CE9E); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #DF66AC, #F4A385 , #39CE9E); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #DF66AC, #F4A385 , #39CE9E); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #DF66AC, #F4A385 , #39CE9E); /* Standard syntax (must be last) */
-    width: 50%;
-    margin-left: 32px;
+    background: -webkit-linear-gradient(left, #ff72c5, #ffa673, #34f0bd); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ff72c5, #ffa673 , #34f0bd); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ff72c5, #ffa673 , #34f0bd); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ff72c5, #ffa673 , #34f0bd); /* Standard syntax (must be last) */
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 
@@ -206,10 +207,42 @@ a[ id= "projects" ]:target ~ section.section {
     transform: translateY(-500px);
 }
 
+.hover-link {
+    color: white;
+    transition: ease 0.25s;
+}
+
+.hover-link:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+
+#back-to-top {
+    /*display: none; !* Hidden by default *!*/
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 40px; /* Rounded corners */
+    padding: 15px 19px 15px 19px;
+    font-size: 30px; /* Increase font size */
+
+}
+
+#back-to-top:hover {
+    color: gray;
+}
 
 
 
 
+
+
+/* Large Devices */
 
 @media only screen and (max-width: 1100px) {
     .grid__item {
@@ -245,6 +278,8 @@ a[ id= "projects" ]:target ~ section.section {
         width: 90%;
     }
 }
+
+/* Mobile Devices & Tablets */
 
 @media only screen and (max-width: 600px) {
     .grid__item {
